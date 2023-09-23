@@ -1,8 +1,8 @@
 import gsap from "gsap";
-import { useLayoutEffect } from "react";
+import { useEffect } from "react";
 
 function Hero() {
-  useLayoutEffect(() => {
+  useEffect(() => {
     const tl = gsap.timeline({ repeat: -1 });
 
     tl.fromTo(
@@ -21,7 +21,7 @@ function Hero() {
     return () => {
       tl.kill();
     };
-  });
+  }, []);
 
   return (
     <div className="h-[100vh] flex  bg-[#27213C]  ">
