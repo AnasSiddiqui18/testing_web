@@ -17,7 +17,7 @@ function Hero() {
         ease: "power2.out",
       }
     );
-  }, []);
+  });
 
   return (
     <div className="h-[100vh] flex  bg-[#27213C]  ">
