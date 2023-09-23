@@ -17,6 +17,10 @@ function Hero() {
         ease: "power2.out",
       }
     );
+
+    return () => {
+      tl.kill();
+    };
   });
 
   return (
