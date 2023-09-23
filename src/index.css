@@ -1,0 +1,147 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@800&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Jost:wght@300&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Jost:wght@300&family=Rowdies&display=swap");
+
+@font-face {
+  font-family: Heading;
+  src: url("../fonts/Heading-Now-Variable.ttf");
+}
+
+@font-face {
+  font-family: cairo;
+  src: url(../fonts/cairo.ttf);
+}
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --main-color: #111;
+}
+
+body {
+  background-color: var(--main-color);
+  overflow-x: hidden !important;
+  background-size: 60px 60px;
+  background-image: linear-gradient(
+      to right,
+      rgb(35, 35, 35) 1px,
+      transparent 1px
+    ),
+    linear-gradient(to bottom, rgb(35, 35, 35) 1px, transparent 1px);
+}
+
+/* CSS */
+@layer components {
+  .max-container {
+    width: 90%;
+    max-width: 1050px;
+    margin-right: auto;
+    margin-left: auto;
+  }
+}
+
+@layer utilities {
+  .padding {
+    @apply sm:py-24 py-12;
+  }
+}
+
+h1 {
+  font-family: "Rowdies", cursive;
+}
+
+h2,
+h3,
+h4,
+h5 {
+  font-family: "Montserrat", "sans-serif";
+}
+
+p {
+  font-family: "Cairo";
+  font-size: 18px;
+}
+
+#second-button {
+  border: 2px dashed #d35269;
+}
+
+#home_image_parent img {
+  filter: brightness(60%);
+}
+
+.bg_home_right {
+  background: linear-gradient(180deg, #27213c 21.88%, rgba(69, 69, 69, 0) 100%);
+}
+
+.home-btn-gradient {
+  background: linear-gradient(to right, #4caf50, #45d85c);
+  box-shadow: 0 0 1.3vmax #4caf50;
+}
+
+.red-btn-gradient {
+  background: linear-gradient(to right, #e74c3c, #f06e5b);
+  box-shadow: 0 0 1.3vmax rgba(231, 76, 60, 0.7);
+}
+
+.orange-btn-gradient {
+  background: linear-gradient(to right, #ff7f00, #ff9f45);
+  box-shadow: 0 0 1.3vmax rgba(255, 127, 0, 0.7);
+}
+
+.instagram-btn-gradient {
+  background: linear-gradient(to right, #833ab4, #dcb0ed);
+  box-shadow: 0 0 1.3vmax rgba(131, 58, 180, 0.7);
+}
+
+.portfolio-color {
+  background: linear-gradient(to right, #4e3a62, #6f5491);
+  box-shadow: 0 0 1.3vmax rgba(78, 58, 98, 0.7);
+}
+
+.font_stretch {
+  font-stretch: 600%;
+}
+
+.active-link {
+  color: #ff7f00;
+}
+
+.swiper-vertical > .swiper-pagination-bullets,
+.swiper-pagination-vertical.swiper-pagination-bullets {
+  transform: translate3d(0, 0, 0) !important;
+}
+
+.swiper-button-disabled {
+  opacity: 0.6 !important;
+}
+
+.background-clients {
+  background-image: url(../images/contact_back.jpg);
+  background-size: cover;
+  background-position: center;
+}
+
+.doodle {
+  filter: invert(80%);
+}
+
+#service_box:nth-child(2n + 1) {
+  background-color: #131313;
+}
+
+#client_parent .swiper-pagination-bullet {
+  width: 12px;
+  height: 12px;
+  opacity: 1;
+  transition: width 0.3s, height 0.3s;
+  border: 2px solid plum;
+}
+
+#client_parent .swiper-pagination-bullet.swiper-pagination-bullet-active {
+  background: linear-gradient(to right, #1f1924, #dcb0ed);
+  box-shadow: 0 0 1.3vmax rgba(131, 58, 180, 0.7);
+}
