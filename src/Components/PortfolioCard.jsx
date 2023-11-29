@@ -86,7 +86,7 @@ function PortfolioCard({ showCard, showSlider }) {
                 onClick={clearFilter}
                 className={`${
                   selectedCategory === null ? "active-link" : ""
-                } font-Poppins uppercase text-xl  max-sm:text-[13px]  max-md:text-[16px]   font-bold cursor-pointer tracking-[1px] `}
+                } font-Poppins uppercase text-xl  max-sm:text-[13px]  max-md:text-[16px] font-bold cursor-pointer tracking-[1px] `}
               >
                 All
               </h3>
@@ -97,7 +97,7 @@ function PortfolioCard({ showCard, showSlider }) {
                     onClick={() => handleClick(category)}
                     className={` ${
                       selectedCategory === category ? "active-link" : ""
-                    } cursor-pointer tracking-[1px] text-xl  max-sm:text-[13px] max-md:text-[16px]  uppercase font-Poppins font-bold`}
+                    } cursor-pointer tracking-[1px] text-xl  max-sm:text-[13px] max-md:text-[16px] uppercase font-Poppins font-bold`}
                   >
                     {category}
                   </h3>
@@ -110,7 +110,7 @@ function PortfolioCard({ showCard, showSlider }) {
                 <div
                   key={value.id}
                   id="card"
-                  className={`bg-white px-4 p-6 rounded-xl flex flex-col `}
+                  className={`bg-white px-4 p-6 rounded-xl flex flex-col`}
                 >
                   <div>
                     <img

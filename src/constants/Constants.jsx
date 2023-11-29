@@ -64,7 +64,6 @@ export const portfolio = [
 
   {
     id: 4,
-
     img: "./images/video_03.jpg",
     category: "Video Editing",
     label: "See project",
@@ -81,7 +80,6 @@ export const portfolio = [
 
   {
     id: 6,
-
     img: "./images/thumb_01.jpg",
     category: "Thumbnail Designing",
     label: "See project",

@@ -145,3 +145,17 @@ p {
   background: linear-gradient(to right, #1f1924, #dcb0ed);
   box-shadow: 0 0 1.3vmax rgba(131, 58, 180, 0.7);
 }
+
+#home_man {
+  animation: homeAnimation 2s linear infinite;
+  transition: transform 0.2s cubic-bezier(0.37, 0, 0.63, 1);
+}
+
+@keyframes homeAnimation {
+  50% {
+    transform: translateY(5%);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
