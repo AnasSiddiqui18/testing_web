@@ -4,6 +4,7 @@ import { useEffect } from "react";
 
 function Hero() {
   const [revert, setrevert] = useState(false);
+
   useEffect(() => {
     const tl = gsap.timeline({});
 
